@@ -63,7 +63,7 @@ impl Individual {
 }
 
 fn create_random_gene() -> f64 {
-    thread_rng().sample(Uniform::new(-1.0, 7.0))
+    thread_rng().sample(Uniform::new(-1.0, 7.0))  // our genes have decimal numbers between -1 and 7, could be anything
 }
 
 fn check_chance(chance: f64) -> bool {
